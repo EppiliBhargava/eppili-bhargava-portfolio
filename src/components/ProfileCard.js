@@ -24,7 +24,10 @@ function ProfileCard() {
     <aside className="profile-card">
       <div className="profile-card-inner">
         <div className="profile-avatar">
-          <img src="/profile.jpg" alt="Eppili Bhargava" />
+          <img
+            src={`${process.env.PUBLIC_URL}/profile.jpg`}
+            alt="Eppili Bhargava"
+          />
         </div>
         
         <h2 className="profile-name">Eppili Bhargava</h2>
