@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Eppili Bhargava — Personal Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive personal portfolio built with React to showcase my professional experience, technical skills, projects, education, and journey as a software engineer.
 
-## Available Scripts
+**Live Portfolio:** [eppilibhargava.github.io/eppili-bhargava-portfolio](https://eppilibhargava.github.io/eppili-bhargava-portfolio/)
 
-In the project directory, you can run:
+## About
 
-### `npm start`
+I'm a Software Engineer with 2.5+ years of professional experience at Wipro, specializing in Java-based backend development, RESTful APIs, database operations, CI/CD workflows, and enterprise software engineering.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I'm currently expanding my skills through Java Full Stack Development with Generative AI training, focusing on frontend development, databases, AWS, and Generative AI fundamentals.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This portfolio brings my professional background, technical capabilities, and projects together in one place.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Responsive Design** — Adapts to desktop, tablet, and mobile screens.
+- **Professional Profile Card** — Displays my profile photo, social links, and currently playing music.
+- **Spotify Integration** — Embedded Spotify player featuring a selected track.
+- **Professional Experience** — Highlights my internship and software development experience.
+- **Technical Skills** — Showcases my programming languages, frameworks, tools, and technologies.
+- **Project Showcase** — Presents my development projects with descriptions, technology stacks, and source-code links.
+- **Education** — Highlights my academic background.
+- **Personal Journey** — Shares my professional goals and ongoing learning journey.
+- **Interactive UI** — Includes hover effects, scroll-reveal animations, and smooth navigation.
+- **Automated Deployment** — Published to GitHub Pages using GitHub Actions.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Category | Technologies |
+|---|---|
+| Frontend | React, JavaScript (ES6+) |
+| Web Technologies | HTML5, CSS3 |
+| Development Tools | Git, GitHub |
+| Deployment | GitHub Pages, GitHub Actions |
+| Backend Skills | Java, JDBC, Servlets, RESTful APIs |
+| Databases | Oracle Database XE, MySQL |
+| Additional Learning | AWS, Generative AI |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Featured Projects
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Java Servlet Database Operations Web Application
 
-### `npm run eject`
+A browser-based Java Servlet application for performing database operations through a simple HTML interface.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Key Features**
+- Select and retrieve database records.
+- Insert, update, and delete records.
+- Create and alter database tables.
+- Connect Java Servlets to Oracle Database XE using JDBC.
+- Organize database operations through a web interface.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Technologies:** Java, JDBC, Oracle Database XE, HTML5, CSS3, Apache Tomcat
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Source Code:** [View on GitHub]([https://github.com/](https://github.com/EppiliBhargava/java-servlet-database-operations))
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 2. Personal Developer Portfolio
 
-## Learn More
+A responsive, interactive portfolio showcasing my professional experience, technical skills, projects, education, and contact links.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Key Features**
+- Dark-themed interface with lime-green accents.
+- Responsive profile card and content layout.
+- Spotify player integration.
+- Interactive navigation and hover effects.
+- Scroll-reveal animations.
+- Automated deployment workflow using GitHub Actions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Technologies:** React, JavaScript (ES6+), HTML5, CSS3, Git, GitHub Actions, GitHub Pages
 
-### Code Splitting
+**Live Demo:** [Visit Portfolio](https://eppilibhargava.github.io/eppili-bhargava-portfolio/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Run Locally
 
-### Analyzing the Bundle Size
+To run the project on your local machine:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Prerequisites
 
-### Making a Progressive Web App
+- Node.js and npm
+- Git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Installation
 
-### Advanced Configuration
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   git clone https://github.com/YOUR_GITHUB_USERNAME/eppili-bhargava-portfolio.git
+   ```
 
-### Deployment
+2. Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   ```bash
+   cd eppili-bhargava-portfolio
+   ```
 
-### `npm run build` fails to minify
+3. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+5. Open the local URL displayed in your terminal, typically `http://localhost:3000`.
+
+## Deployment
+
+This portfolio is hosted on GitHub Pages.
+
+The deployment workflow uses GitHub Actions to automate the build and publishing process when changes are pushed to the configured branch or trigger.
+
+**Live Website:** [Eppili Bhargava — Portfolio](https://eppilibhargava.github.io/eppili-bhargava-portfolio/)
+
+## Connect With Me
+
+- **Portfolio:** [Visit Website](https://eppilibhargava.github.io/eppili-bhargava-portfolio/)
+- **GitHub:** [GitHub Profile]([https://github.com/YOUR_GITHUB_USERNAME](https://github.com/EppiliBhargava))
+- **LinkedIn:** [LinkedIn Profile](www.linkedin.com/in/eppilibhargava)
+- **Email:** [Email Id](bhargavaeppili@gmail.com)
+
+## License
+
+This project is intended to showcase my personal portfolio and development work. Please contact me before reusing substantial portions of the design or content.
+
+---
+
+*Designed and developed by Eppili Bhargava.*
