@@ -126,15 +126,29 @@ a:hover {
   padding-top: 104px;
 }
 
+/* Layout containers */
+.sticky-layout {
+  display: block;
+  min-width: 0;
+}
+
 .profile-column {
   position: relative;
   min-width: 0;
 }
 
-.content-column {
+.content-column,
+.content-after-stack {
   position: relative;
   z-index: 1;
   min-width: 0;
+}
+
+.content-column {
+  padding-bottom: 0;
+}
+
+.content-after-stack {
   padding-bottom: 48px;
 }
 
@@ -189,7 +203,11 @@ a:hover {
   padding: 18px;
   border: 1px solid var(--line);
   border-radius: 22px;
-  background: linear-gradient(145deg, rgba(24, 29, 24, .96), rgba(14, 17, 15, .96));
+  background: linear-gradient(
+    145deg,
+    rgba(24, 29, 24, .96),
+    rgba(14, 17, 15, .96)
+  );
   box-shadow: 0 18px 55px rgba(0, 0, 0, .18);
 }
 
@@ -225,6 +243,19 @@ a:hover {
   font-weight: 800;
   letter-spacing: -.045em;
   margin-bottom: 5px;
+  text-wrap: balance;
+}
+
+.profile-name-first {
+  color: var(--text);
+}
+
+.profile-name-accent {
+  background: linear-gradient(110deg, #f0f2ed 5%, var(--accent) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--accent);
 }
 
 .profile-tagline {
@@ -236,7 +267,10 @@ a:hover {
 
 .profile-links {
   display: flex;
-  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
   margin-bottom: 22px;
 }
 
@@ -250,7 +284,11 @@ a:hover {
   border-radius: 50%;
   color: var(--muted);
   background: rgba(255, 255, 255, .02);
-  transition: color .2s ease, border-color .2s ease, background .2s ease, transform .2s ease;
+  transition:
+    color .2s ease,
+    border-color .2s ease,
+    background .2s ease,
+    transform .2s ease;
 }
 
 .profile-link:hover {
@@ -369,7 +407,10 @@ a:hover {
   font-size: .84rem;
   font-weight: 700;
   border: 1px solid var(--line);
-  transition: transform .25s ease, background .25s ease, border-color .25s ease;
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease;
 }
 
 .btn:hover {
@@ -530,7 +571,10 @@ a:hover {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  transition: transform .25s ease, background .25s ease, border-color .25s ease;
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease;
   transition-delay: 0s !important;
 }
 
@@ -630,7 +674,10 @@ a:hover {
   border: 1px solid var(--line);
   border-radius: 15px;
   background: rgba(18, 22, 19, .68);
-  transition: border-color .25s ease, background .25s ease, transform .25s ease;
+  transition:
+    border-color .25s ease,
+    background .25s ease,
+    transform .25s ease;
 }
 
 .skill-group:hover {
@@ -654,7 +701,10 @@ a:hover {
 
 .tag {
   padding: 6px 9px;
-  transition: color .2s ease, border-color .2s ease, background .2s ease;
+  transition:
+    color .2s ease,
+    border-color .2s ease,
+    background .2s ease;
 }
 
 .tag:hover {
@@ -663,13 +713,25 @@ a:hover {
   background: var(--accent-soft);
 }
 
-/* Personal Journey: one continuous panel */
+/* Personal Journey */
 .journey {
   display: block;
   padding: 20px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    background .25s ease,
+    box-shadow .25s ease;
+}
+
+.journey:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-line);
+  background: var(--panel-hover);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .14);
 }
 
 .journey p {
@@ -689,13 +751,6 @@ a:hover {
   margin-top: 16px;
 }
 
-.journey p:hover {
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  transform: none;
-}
-
 .journey strong {
   color: var(--text);
   font-weight: 700;
@@ -713,7 +768,10 @@ a:hover {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--panel);
-  transition: transform .25s ease, border-color .25s ease, background .25s ease;
+  transition:
+    transform .25s ease,
+    border-color .25s ease,
+    background .25s ease;
 }
 
 .beyond-card:hover {
@@ -777,7 +835,10 @@ a:hover {
   color: var(--muted);
   font-family: 'DM Mono', monospace;
   font-size: .68rem;
-  transition: color .2s ease, border-color .2s ease, background .2s ease;
+  transition:
+    color .2s ease,
+    border-color .2s ease,
+    background .2s ease;
 }
 
 .language-tag:hover {
@@ -836,20 +897,21 @@ a:hover {
     position: relative;
   }
 
-  .profile-column {
-    position: fixed;
-    top: 118px;
-    left: max(28px, calc((100vw - 1184px) / 2));
-    width: 310px;
-    z-index: 10;
+  .sticky-layout {
+    display: grid;
+    grid-template-columns: 310px minmax(0, 1fr);
+    column-gap: 60px;
+    align-items: stretch;
+    padding-top: 118px;
   }
 
-  .profile-column.unstuck {
-    position: absolute;
-    left: var(--unstuck-left, 0px);
-    top: var(--unstuck-top, 0px);
+  .profile-column {
+    position: sticky;
+    top: 55px;
+    align-self: start;
     width: 310px;
-    transform: none;
+    min-width: 0;
+    z-index: 10;
   }
 
   .profile-card {
@@ -864,8 +926,16 @@ a:hover {
   .content-column {
     width: auto;
     max-width: 850px;
+    min-width: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .content-after-stack {
+    width: auto;
+    max-width: 850px;
     margin-left: 370px;
-    padding-top: 118px;
     padding-bottom: 60px;
   }
 
@@ -879,13 +949,13 @@ a:hover {
 }
 
 @media (min-width: 1300px) {
-  .profile-column {
-    left: calc((100vw - 1184px) / 2);
+  .sticky-layout {
+    grid-template-columns: 310px minmax(0, 1fr);
+    column-gap: 60px;
   }
 
-  .content-column {
-    margin-left: 390px;
-    padding-top: 118px;
+  .content-after-stack {
+    margin-left: 370px;
   }
 }
 
@@ -900,17 +970,24 @@ a:hover {
     gap: 25px;
   }
 
-  .profile-column,
-  .profile-column.unstuck {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: auto;
+  .sticky-layout {
+    display: block;
   }
 
+  .profile-column,
   .profile-card {
+    position: relative;
+    top: auto;
+    width: auto;
     max-width: 620px;
     margin: 0 auto;
+  }
+
+  .content-after-stack {
+    width: auto;
+    max-width: none;
+    margin-left: 0;
+    padding-bottom: 30px;
   }
 
   .profile-card-inner {
@@ -940,8 +1017,11 @@ a:hover {
   }
 
   .profile-links {
+    grid-column: 1 / -1;
     align-self: start;
-    margin: 0;
+    justify-content: center;
+    width: 100%;
+    margin: 8px 0 0;
   }
 
   .currently-hooked {
