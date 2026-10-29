@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 
 import React from 'react';
-
+import { FaGithub } from 'react-icons/fa';
 const LinkedInIcon = () => (
   <svg
     width="20"
@@ -91,6 +91,16 @@ function ProfileCard() {
           >
             <MailIcon />
           </a>
+          <a
+            href="https://github.com/EppiliBhargava"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="profile-link"
+            aria-label="GitHub profile"
+            title="GitHub"
+          >
+  <FaGithub />
+</a>
         </div>
 
         <div className="currently-hooked">
