@@ -25,7 +25,7 @@ function ProfileCard() {
       <div className="profile-card-inner">
         <div className="profile-avatar">
           <img
-            src={`${process.env.PUBLIC_URL}/profile.jpg`}
+            src={`${process.env.PUBLIC_URL}/profile.png`}
             alt="Eppili Bhargava"
           />
         </div>
