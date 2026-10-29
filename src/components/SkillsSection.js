@@ -16,30 +16,35 @@ const SkillGroup = ({ title, items }) => (
 
 function SkillsSection() {
   return (
-    <Section
-      id="skills"
-      title="Skills"
-    >
+    <Section id="skills" title="Technical Skills">
       <div className="skills-grid">
         <SkillGroup
+          title="Programming"
+          items={['Core Java', 'Object-Oriented Programming (OOP)']}
+        />
+        <SkillGroup
           title="Backend Development"
-          items={['Core Java(OOPs, Collections, Streams)', 'C', 'C#', 'Spring Boot', 'Maven', 'Gradle']}
+          items={['Spring Boot', 'JDBC', 'Servlets', 'JSP', 'RESTful Web Services']}
         />
         <SkillGroup
           title="Frontend Development"
-          items={['HTML5', 'CSS3', 'JavaScript(ES6+)', 'ReactJs']}
+          items={['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React']}
         />
         <SkillGroup
           title="Databases"
-          items={['SQL', 'MySQL', 'Database Design & Optimization']}
+          items={['SQL', 'Oracle', 'MySQL', 'PostgreSQL', 'Database Design & Optimization']}
         />
         <SkillGroup
-          title="Dev Tools"
-          items={['Git', 'GitHub', 'Github Actions', 'VS Code', 'IntelliJ IDEA']}
+          title="Build, Version Control & CI/CD"
+          items={['Maven', 'Gradle', 'Git', 'GitHub', 'Jenkins', 'Docker', 'GitHub Actions']}
         />
         <SkillGroup
-          title="Other"
-          items={['IBM Rhapsody', 'Unity 3D', 'Maya']}
+          title="Testing & Development Tools"
+          items={['JUnit', 'Mockito', 'VS Code', 'IntelliJ IDEA']}
+        />
+        <SkillGroup
+          title="Cloud & Additional Technologies"
+          items={['AWS (currently learning)', 'Generative AI fundamentals', 'IBM Rhapsody (SysML)', 'Unity 3D', 'Maya']}
         />
       </div>
     </Section>

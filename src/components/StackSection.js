@@ -3,33 +3,34 @@ import Section from './Section';
 
 const tools = [
   {
-    title: 'VS Code',
-    summary: 'My everyday code editor for Java, ReactJs and Unity scripts — paired with GitHub and extensions.',
+    title: 'Java & Spring Boot',
+    summary: 'Core Java, OOP, backend application development, and RESTful web services.',
   },
   {
-    title: 'GitHub & GitHub Actions',
-    summary: 'Version control and CI/CD for Java plugins and automation workflows.',
+    title: 'JDBC, Servlets & JSP',
+    summary: 'Java web technologies and database connectivity, including a project using Oracle Database XE.',
   },
   {
-    title: 'Maven & Gradle',
-    summary: 'Build tools I use to manage Java projects and streamline plugin builds.',
+    title: 'SQL & Databases',
+    summary: 'SQL, Oracle, MySQL, PostgreSQL, and database design and query optimization.',
   },
   {
-    title: 'Unity & Maya',
-    summary: 'My 3D and game development stack for interactive experiences and visualizations.',
+    title: 'Maven, Gradle & Git',
+    summary: 'Build management and version control for maintaining and collaborating on software projects.',
   },
   {
-    title: 'SQL & SOQL',
-    summary: 'For querying and optimizing relational data and Salesforce records.',
+    title: 'Jenkins, Docker & Testing',
+    summary: 'CI/CD workflows and unit testing with JUnit and Mockito.',
+  },
+  {
+    title: 'React, JavaScript & AWS',
+    summary: 'Developing frontend skills with React and JavaScript while currently learning AWS and Generative AI fundamentals.',
   },
 ];
 
 function StackSection() {
   return (
-    <Section
-      id="stack"
-      title="App Stack"
-    >
+    <Section id="stack" title="Technology Stack">
       <div className="cards-grid">
         {tools.map((tool) => (
           <article key={tool.title} className="card reveal-on-scroll">

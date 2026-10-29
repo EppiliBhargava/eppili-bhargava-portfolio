@@ -3,28 +3,27 @@ import Section from './Section';
 
 function ExperienceSection() {
   return (
-    <Section
-      id="experience"
-      title="Experience"
-    >
+    <Section id="experience" title="Experience">
       <div className="timeline">
         <article className="timeline-item">
           <header className="timeline-header">
             <div>
-              <h3 className="timeline-title">Full Stack Development</h3>
-              <p className="timeline-meta">Self-Directed Upskilling · Aug 2024 - Present · Hyderabad</p>
+              <h3 className="timeline-title">Java Full Stack Development with Generative AI</h3>
+              <p className="timeline-meta">Professional Development · In progress</p>
             </div>
-            <span className="timeline-tag">Full Stack</span>
+            <span className="timeline-tag">Training</span>
           </header>
           <ul className="timeline-list">
             <li>
-              Undertaking structured learning in Full Stack Development with focus on Java-based backend and modern frontend technologies.
+              Building knowledge across Core Java, JDBC, Servlets, JSP, Spring Boot,
+              HTML, CSS, JavaScript, React, SQL, Oracle, MySQL, and AWS.
             </li>
             <li>
-              Building hands-on projects using HTML5, CSS3, JavaScript (ES6+), React JS, and Spring Boot.
+              Practicing REST API design, Git/GitHub workflows, frontend component
+              development, and full-stack application concepts.
             </li>
             <li>
-              Practicing Git/GitHub workflows, REST API design, and component-based UI development.
+              Learning Generative AI fundamentals as part of the training program.
             </li>
           </ul>
         </article>
@@ -33,25 +32,30 @@ function ExperienceSection() {
           <header className="timeline-header">
             <div>
               <h3 className="timeline-title">Java Developer</h3>
-              <p className="timeline-meta">Wipro · 2022 - 2024 · Bangalore</p>
+              <p className="timeline-meta">Wipro · February 2022 – July 2024 · Bengaluru, India</p>
             </div>
-            <span className="timeline-tag">Java</span>
+            <span className="timeline-tag">2 years 6 months</span>
           </header>
           <ul className="timeline-list">
             <li>
-              Developed and maintained backend services using Java 17, Spring Boot, and RESTful APIs, ensuring scalable and high-performance application functionality.
+              Developed and maintained backend services using Java 17, Spring Boot,
+              and RESTful APIs to support enterprise application functionality.
             </li>
             <li>
-              Collaborated with cross-functional teams to design and optimize database operations using MySQL/PostgreSQL, implementing efficient queries and improving application performance.
+              Worked with MySQL and PostgreSQL to implement and optimize database
+              queries, support data operations, and improve application performance.
             </li>
             <li>
-              Participated in Git-based version control, code reviews, and CI/CD pipelines using Jenkins and Docker, contributing to faster and more reliable software deployments.
+              Used Git for version control and collaborated through code reviews and
+              Agile/Scrum development practices.
             </li>
             <li>
-              Implemented API integrations and performed unit testing using JUnit and Mockito, improving code quality and application reliability.
+              Contributed to CI/CD workflows using Jenkins and Docker, and performed
+              unit testing with JUnit and Mockito to support reliable builds and code quality.
             </li>
             <li>
-              Worked in an Agile/Scrum environment, participating in sprint planning, daily stand-ups, and feature delivery cycles.
+              Collaborated with cross-functional teams throughout sprint planning,
+              development, testing, and feature delivery.
             </li>
           </ul>
         </article>
@@ -60,19 +64,22 @@ function ExperienceSection() {
           <header className="timeline-header">
             <div>
               <h3 className="timeline-title">Java Developer Intern</h3>
-              <p className="timeline-meta">Quantumware Technical Services Pvt. Ltd · June 2021 - Jan 2022 · Bhubaneswar, Odisha</p>
+              <p className="timeline-meta">Quantumware Technical Services Pvt. Ltd. · June 2021 – January 2022 · Bhubaneswar, India</p>
             </div>
             <span className="timeline-tag">Internship</span>
           </header>
           <ul className="timeline-list">
             <li>
-              Developed and enhanced Java-based application modules using core Java concepts and object-oriented design principles.
+              Developed and enhanced Java modules using Core Java and Object-Oriented
+              Programming principles, following coding standards and best practices.
             </li>
             <li>
-              Assisted in debugging, testing, and optimizing existing applications to improve performance and resolve functional issues.
+              Assisted with debugging, testing, and troubleshooting application issues
+              to improve functionality and code quality.
             </li>
             <li>
-              Collaborated with the development team on requirement analysis, feature implementation, and maintaining technical documentation.
+              Worked with the development team to implement features from project
+              requirements and maintain technical documentation.
             </li>
           </ul>
         </article>
