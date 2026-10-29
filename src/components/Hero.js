@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section id="hero" className="hero-section">
       <p className="hero-eyebrow">Java Developer · Software Engineer</p>
-      <h1 className="hero-gradient-title">Engineering robust backends. Building meaningful software.</h1>
+      <h1 className="hero-gradient-title">Building reliable software, one system at a time.</h1>
 
       <div className="hero-intro">
         <p>Namaste, HRs and Hiring Managers,</p>

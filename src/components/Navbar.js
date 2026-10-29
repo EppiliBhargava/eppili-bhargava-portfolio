@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaGithub } from "react-icons/fa";
 
 // Inline SVG icons
 const HomeIcon = () => (
@@ -56,16 +55,6 @@ function Navbar() {
         >
           <LinkedInIcon />
         </a>
-        <a
-          href="https://github.com/EppiliBhargava"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="navbar-icon-btn"
-          aria-label="GitHub Profile"
-          title="GitHub"
-          >
-  <FaGithub />
-</a>
       </nav>
     </header>
   );
