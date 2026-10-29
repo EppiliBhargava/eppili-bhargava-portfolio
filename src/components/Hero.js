@@ -3,7 +3,8 @@ import React from 'react';
 function Hero() {
   return (
     <section id="hero" className="hero-section">
-      <h1 className="hero-gradient-title">Java Developer | Aspiring Java Full Stack Developer</h1>
+      <p className="hero-eyebrow">Java Developer · Software Engineer</p>
+      <h1 className="hero-gradient-title">Engineering robust backends. Building meaningful software.</h1>
 
       <div className="hero-intro">
         <p>Namaste, HRs and Hiring Managers,</p>
@@ -15,6 +16,10 @@ function Hero() {
           with Generative AI training, expanding skills in JDBC, Servlets, JSP,
           React, databases, AWS, and Generative AI fundamentals.
         </p>
+      </div>
+      <div className="hero-actions">
+        <a className="btn btn-primary" href="/Eppili_Bhargava_Resume.docx" download="Eppili_Bhargava_Resume.docx">Download resume <span aria-hidden="true">↗</span></a>
+        <a className="btn btn-ghost" href="https://github.com/EppiliBhargava" target="_blank" rel="noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   );
