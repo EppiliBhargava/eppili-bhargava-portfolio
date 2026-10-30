@@ -17,10 +17,24 @@ function Hero() {
           React, databases, AWS, and Generative AI fundamentals.
         </p>
       </div>
-      <div className="hero-actions">
-        <a className="btn btn-primary" href="/Eppili_Bhargava_Resume.docx" download="Eppili_Bhargava_Resume.docx">Download resume <span aria-hidden="true">↗</span></a>
-        <a className="btn btn-ghost" href="https://github.com/EppiliBhargava" target="_blank" rel="noreferrer">Explore GitHub <span aria-hidden="true">↗</span></a>
-      </div>
+     <div className="hero-actions">
+  <a
+    className="btn btn-primary"
+    href={`${process.env.PUBLIC_URL}/Eppili_Bhargava_Resume.docx`}
+    download="Eppili_Bhargava_Resume.docx"
+  >
+    Download resume <span aria-hidden="true">↗</span>
+  </a>
+
+  <a
+    className="btn btn-ghost"
+    href="https://github.com/EppiliBhargava"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Explore GitHub <span aria-hidden="true">↗</span>
+  </a>
+</div>
     </section>
   );
 }
