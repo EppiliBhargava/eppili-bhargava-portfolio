@@ -39,15 +39,14 @@ function Navbar() {
         >
           <HomeIcon />
         </button>
-        <a
-          href="/Eppili_Bhargava_Resume.docx"
-          download="Eppili_Bhargava_Resume.docx"
-          className="navbar-icon-btn"
-          aria-label="Download Resume"
-        >
-          <ResumeIcon />
+        <div className="hero-actions">
+          <a
+            className="btn btn-primary"
+            href={`${process.env.PUBLIC_URL}/Eppili_Bhargava_Resume.docx`}
+            download="Eppili_Bhargava_Resume.docx"
+          >
+          Download resume <span aria-hidden="true">↗</span>
         </a>
-        <a
           href="https://www.linkedin.com/in/eppilibhargava"
           target="_blank"
           rel="noreferrer"
