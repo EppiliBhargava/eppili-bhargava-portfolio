@@ -1,36 +1,66 @@
 import React from 'react';
-import { FaGithub } from "react-icons/fa";
+import { FaGithub } from 'react-icons/fa';
 
-// Inline SVG icons
+// Home Icon
 const HomeIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-    <polyline points="9 22 9 12 15 12 15 22"/>
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+    <polyline points="9 22 9 12 15 12 15 22" />
   </svg>
 );
 
+// Resume Icon
 const ResumeIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
-    <line x1="8" y1="21" x2="16" y2="21"/>
-    <line x1="12" y1="17" x2="12" y2="21"/>
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+    <line x1="8" y1="21" x2="16" y2="21" />
+    <line x1="12" y1="17" x2="12" y2="21" />
   </svg>
 );
 
+// LinkedIn Icon
 const LinkedInIcon = () => (
-  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+  >
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
   </svg>
 );
 
 function Navbar() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
     <header className="navbar">
       <nav className="navbar-inner">
+
+        {/* Home Button */}
         <button
           type="button"
           onClick={scrollToTop}
@@ -39,22 +69,31 @@ function Navbar() {
         >
           <HomeIcon />
         </button>
-        <div className="hero-actions">
-          <a
-            className="btn btn-primary"
-            href={`${process.env.PUBLIC_URL}/Eppili_Bhargava_Resume.docx`}
-            download="Eppili_Bhargava_Resume.docx"
-          >
-          Download resume <span aria-hidden="true">↗</span>
+
+        {/* Resume Download */}
+        <a
+          href={`${process.env.PUBLIC_URL}/Eppili_Bhargava_Resume.docx`}
+          download="Eppili_Bhargava_Resume.docx"
+          className="navbar-icon-btn"
+          aria-label="Download Resume"
+          title="Download Resume"
+        >
+          <ResumeIcon />
         </a>
+
+        {/* LinkedIn Profile */}
+        <a
           href="https://www.linkedin.com/in/eppilibhargava"
           target="_blank"
           rel="noreferrer"
           className="navbar-icon-btn"
           aria-label="LinkedIn"
+          title="LinkedIn"
         >
           <LinkedInIcon />
         </a>
+
+        {/* GitHub Profile */}
         <a
           href="https://github.com/EppiliBhargava"
           target="_blank"
@@ -62,9 +101,10 @@ function Navbar() {
           className="navbar-icon-btn"
           aria-label="GitHub Profile"
           title="GitHub"
-          >
-  <FaGithub />
-</a>
+        >
+          <FaGithub />
+        </a>
+
       </nav>
     </header>
   );
